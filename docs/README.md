@@ -28,7 +28,7 @@ Sometimes it's annoying to see the dizzy lines when you project get complicated.
 ![](_assets/1.png ':align=center')
 
 ### About the examples
-Several sample projects is provided in example tab to help you get involved to CGProto more quickly. We plan to supply more instructive examples in the future released of CGProto.
+Several sample projects is provided in example tab to help you get involved to CGProto more quickly. We plan to supply more instructive examples in the future released of CGProto. Some of the sources are modified from open source projects and are under licensed. You should subject to the corresponding licenses when using those sources.
 
 ### Contact
 If you hava any questions or suggestions about CGProto, feel free to contact us at [lorentz.0718@gmail.com](mailto:lorentz.0718@gmail.com).
