@@ -2,14 +2,15 @@
 
 ## Data Buffer
 
+
 ## Image
 
 |  field | type  | available value | optional |default value
 |  ----  | ----  | ---- | ---- | ---- |
-| pixelFormat  | String | a8Unorm<br><br>r8Unorm\|r8Uint\|r8Snorm\|r8Sint<br>r16Unorm\|r16Uint\|r16Snorm\|r16Sint\|r16Float<br>r32Uint\|r32Sint\|r32Float<br><br>rg8Unorm\|rg8Uint\|rg8Snorm\|rg8Sint<br>rg16Unorm\|rg16Uint\|rg16Snorm\|rg16Sint\|rg16Float<br>rg32Uint\|rg32Sint\|rg32Float<br><br>rgba8Unorm\|rgba8Uint\|rgba8Snorm\|rgba8Sint<br>rgba16Unorm\|rgba16Uint\|rgba16Snorm\|rgba16Sint\|rgba16Float<br>rgba32Uint\|rgba32Sint\|rgba32Float | false |
+| pixelFormat | String | a8Unorm<br><br>r8Unorm\|r8Uint\|r8Snorm\|r8Sint<br>r16Unorm\|r16Uint\|r16Snorm\|r16Sint\|r16Float<br>r32Uint\|r32Sint\|r32Float<br><br>rg8Unorm\|rg8Uint\|rg8Snorm\|rg8Sint<br>rg16Unorm\|rg16Uint\|rg16Snorm\|rg16Sint\|rg16Float<br>rg32Uint\|rg32Sint\|rg32Float<br><br>rgba8Unorm\|rgba8Uint\|rgba8Snorm\|rgba8Sint<br>rgba16Unorm\|rgba16Uint\|rgba16Snorm\|rgba16Sint\|rgba16Float<br>rgba32Uint\|rgba32Sint\|rgba32Float | false |
 | dimension  | Integer | 1\|2\|3 | true | 2
 | width | Integer | [1, 4096] | false | 
-| height | Integer |[1, 4096] | true if dimension < 2 | 1
+| height | Integer | [1, 4096] | true if dimension < 2 | 1
 | depth | Integer | [1, 4096]| true if dimension < 3 | 1
 | data | Array of Number\|TypedArray | | false
 

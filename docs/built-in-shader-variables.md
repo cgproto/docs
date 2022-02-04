@@ -10,4 +10,4 @@
 | MATRIX_MVP | float4x4 | MATRIX_P * MATRIX_V * MATRIX_M
 | VIEW_POSITION | float3 | camera position in world space
 
-Because MATRIX_M and MATRIX_V doesn't contain non-uniform scale, you could simply transform normal vector by `float3 worldNormal = (MATRIX_M * float4(normal, 0.0)).xyz` or `float3 viewNormal = (MATRIX_MV * float4(normal, 0.0)).xyz`
+Because MATRIX_M and MATRIX_V doesn't contain non-uniform scale, you could simply transform normal vector by `float3 worldNormal = (MATRIX_M * float4(normal, 0.0)).xyz` or `float3 viewNormal = (MATRIX_MV * float4(normal, 0.0)).xyz`. Be aware that the multiplication order of the matrix and vector should be inversed when you are writing hlsl.
