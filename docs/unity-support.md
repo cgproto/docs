@@ -31,8 +31,8 @@ See [Unity doc](https://docs.unity3d.com/Manual/shader-shaderlab-commands.html) 
 ## Built-in shader variables
 See [Unity doc](https://docs.unity3d.com/Manual/SL-UnityShaderVariables.html) for details about variable values
 
-| Variable | Supported
-| ---- | ---- |
+| Variable | Supported | |
+| ---- | ---- | ---- |
 | UNITY_MATRIX_MVP | ✅
 | UNITY_MATRIX_MV | ✅
 | UNITY_MATRIX_V | ✅
@@ -54,3 +54,24 @@ See [Unity doc](https://docs.unity3d.com/Manual/SL-UnityShaderVariables.html) fo
 | _SinTime | ❌
 | _CosTime | ❌
 | unity_DeltaTime | ❌
+| _LightColor0 | ✅
+| _WorldSpaceLightPos0 | ✅
+| unity_WorldToLight | ❌
+| unity_4LightPosZ0 | ✅
+| unity_4LightPosX0<br>unity_4LightPosY0<br>unity_4LightPosZ0 | ✅
+| unity_4LightAtten0 | ❌
+| unity_LightColor | ✅
+| unity_WorldToShadow | ❌
+| unity_LightPosition | ❌
+| unity_LightAtten | ❌
+| unity_SpotDirection | ❌
+| unity_Lightmap | ❌
+| unity_LightmapST | ❌
+| unity_AmbientSky | ❌
+| unity_AmbientEquator | ❌
+| unity_AmbientGround | ❌
+| UNITY_LIGHTMODEL_AMBIENT | ✅
+| unity_FogColor | ❌
+| unity_FogParams | ❌
+| unity_LODFade | ❌
+| _TextureSampleAdd | ❌

@@ -22,12 +22,12 @@ Because MATRIX_M and MATRIX_V doesn't contain non-uniform scale, you could simpl
 
 When writting metal shader, it is not legal to declare array of float4 as qualified function parameter. You could alternatively declare lights as device pointer or struct type.
 
-```javascript
+```cpp
 const device float4 *LIGHT_COLORS
 const device float4 *LIGHT_POSITIONS
 ```
 
-```javascript
+```cpp
 //struct name is arbitrary
 struct MyStruct {
   float4 LIGHT_COLORS[9];
