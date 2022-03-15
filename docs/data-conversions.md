@@ -4,6 +4,15 @@
 
 
 ## Image
+Here are some examples of valid javascript images. See the table below for more details.
+```javascript
+{
+  width: 2,
+  height: 2,
+  pixelFormat: 'rgba8Unorm',
+  data: [255, 0, 0, 255, 0, 255, 0, 255, 0, 0, 255, 255, 255, 255, 0, 255]
+}
+```
 
 |  field | type  | available value | optional |default value
 |  ----  | ----  | ---- | ---- | ---- |
@@ -16,7 +25,26 @@
 
 
 ## Mesh
-
+Here are some examples of valid javascript images. See the table below for more details. If indices data is not provided the vertex order makes mesh topology.
+```javascript
+{
+  geometryType: 'triangles',
+  indices: [0, 1, 2, 1, 3, 2],
+  indexBitDepth: 8,
+  attributes: [
+    {
+      name: 'position',
+      format: 'float2',
+      data: [-1, 1, -1, -1, 1, 1, 1, -1],
+    },
+    {
+      name: 'textureCoordinate',
+      format: 'float2',
+      data: [0, 0, 0, 1, 1, 0, 1, 1],
+    }
+  ]
+}
+```
 |  field | type  | available value | optional |default value
 |  ----  | ----  | ---- | ---- | ---- |
 | geometryType  | String | points<br>lines<br>triangles<br>triangleStrips<br>quads | false | 
@@ -26,6 +54,7 @@
 
 
 ## Attribute
+The attribute name should match the name defined in the corresponed shader.
 
 |  field | type  | available value |
 |  ----  | ----  | ---- |
