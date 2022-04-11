@@ -19,6 +19,7 @@ Because MATRIX_M and MATRIX_V doesn't contain non-uniform scale, you could simpl
 | AMBIENT_COLOR | float4 | 
 | LIGHT_COLORS | float4[9] | 
 | LIGHT_POSITIONS | float4[9] | Directional lights: (world space direction, 0). Point lights: (world space position, 1).
+| REFLECTION_MAP | texturecube\<float\> | the skybox pass to clearColor input of shader node
 
 When writting metal shader, it is not legal to declare array of float4 as qualified function parameter. You could alternatively declare lights as device pointer or struct type.
 

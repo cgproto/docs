@@ -1,10 +1,11 @@
 # Data Conversions
 
 ## Data Buffer
-
+Scalar, vector, matrix and their array or pointer types defined as uniforms in shader are all treated as data buffer. To fill the buffer content you could not only use the Value nodes(Scalar, VectorN, Timer, ColorPicker), Arthmetic nodes(Addition, Subtraction, Multiplication, Division) and Mix node, but also javascript node. CGProto automatically convert javascript number, array of number or multi-dimension array of number to GPU buffers and pass to shader uniforms. There is no restriction on the dimension of the array because it would be flattened before passed to the GPU. All you need to do is to ensure the data length is sufficient.
+![](_assets/9.png)
 
 ## Image
-Here are some examples of valid javascript images. See the table below for more details.
+You are able to generate image in javascript and pass to shader texture, or read the pixel data of the render output of a shader node. Here are some examples of valid javascript images. See the table below for more details. 
 ```javascript
 {
   width: 2,
@@ -25,7 +26,7 @@ Here are some examples of valid javascript images. See the table below for more 
 
 
 ## Mesh
-Here are some examples of valid javascript images. See the table below for more details. If indices data is not provided the vertex order makes mesh topology.
+You are able to generate mesh in javascript and pass to shader mesh input. Here are some examples of valid javascript meshes. See the table below for more details. When indices data is not provided the vertex order makes mesh topology.
 ```javascript
 {
   geometryType: 'triangles',
@@ -53,7 +54,7 @@ Here are some examples of valid javascript images. See the table below for more 
 | attributes | Array of Object |  | false |
 
 
-## Attribute
+## Mesh Attribute
 The attribute name should match the name defined in the corresponed shader.
 
 |  field | type  | available value |

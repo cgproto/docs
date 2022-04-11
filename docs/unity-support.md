@@ -75,3 +75,4 @@ See [Unity doc](https://docs.unity3d.com/Manual/SL-UnityShaderVariables.html) fo
 | unity_FogParams | ❌
 | unity_LODFade | ❌
 | _TextureSampleAdd | ❌
+| unity_SpecCube0 | ✅
