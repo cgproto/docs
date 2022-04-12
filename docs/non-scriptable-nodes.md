@@ -5,7 +5,7 @@ Since immediate sampler state is not support in glsl, you need to define a sampl
 ![](_assets/2.png)
 
 ## RenderState
-Each render pass accept a optional render state input. When the input is leave empty, all states are set to default value. See for [MTLRenderPipelineColorAttachmentDescriptor](https://developer.apple.com/documentation/metal/mtlrenderpipelinecolorattachmentdescriptor), [MTLDepthStencilDescriptor](https://developer.apple.com/documentation/metal/mtldepthstencildescriptor/) and [MTLRenderCommandEncoder](https://developer.apple.com/documentation/metal/mtlrendercommandencoder/1516029-settrianglefillmode/) for more details. 
+Shader node accept a optional render state input. When the input is leave empty, all states are set to default value. See [MTLRenderPipelineColorAttachmentDescriptor](https://developer.apple.com/documentation/metal/mtlrenderpipelinecolorattachmentdescriptor), [MTLDepthStencilDescriptor](https://developer.apple.com/documentation/metal/mtldepthstencildescriptor/) and [MTLRenderCommandEncoder](https://developer.apple.com/documentation/metal/mtlrendercommandencoder/1516029-settrianglefillmode/) for more details. 
 
 |  state | default value
 | ---- | ---- |
