@@ -13,6 +13,23 @@ You are able to generate image in javascript and pass to shader texture, or read
   pixelFormat: 'rgba8Unorm',
   data: [255, 0, 0, 255, 0, 255, 0, 255, 0, 0, 255, 255, 255, 255, 0, 255]
 }
+
+{
+  width: 2,
+  height: 2,
+  depth: 2,
+  dimension: 3,
+  pixelFormat: 'r16Float',
+  data: [0.1, 10.2, 100.3, 1000.4, -50.5, -100, -200, 0]
+}
+
+{
+  width: 10,
+  height: 10,
+  dimension: 2,
+  pixelFormat: 'rg32Float',
+  data: Float32Array.from([...Array(200).keys()])
+}
 ```
 
 |  field | type  | available value | optional |default value
