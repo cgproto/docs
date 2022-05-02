@@ -43,7 +43,9 @@ You are able to generate image in javascript and pass to shader texture, or read
 
 
 ## Mesh
-You are able to generate mesh in javascript and pass to shader mesh input. Here are some examples of valid javascript meshes. See the table below for more details. When indices data is not provided the vertex order makes mesh topology.
+You are able to generate mesh in javascript and pass to shader mesh input. Here are some examples of valid javascript meshes. See the table below for more details. When indices data is not provided the vertex order makes mesh topology. 
+
+The boundingBox is used for generating world matrix when you are using [built-in shader transforms](built-in-shader-variables?id=transformations). It is an optional value and would be automatically calculated from vertex positions. There are two reason you may provide it explicitly. One is for performance improvement, which is not such important. The other is that if you are making a vertex animation, the center and size of the minimum bounding box may change continually so the object looks jiggling. A constant bounding box could help locking the transform of mesh object.
 ```javascript
 {
   geometryType: 'triangles',
@@ -60,7 +62,11 @@ You are able to generate mesh in javascript and pass to shader mesh input. Here 
       format: 'float2',
       data: [0, 0, 0, 1, 1, 0, 1, 1],
     }
-  ]
+  ],
+  boundingBox: {
+    min: [-1, -1, -1],
+    max: [1, 1, 1]
+  }
 }
 ```
 |  field | type  | available value | optional |default value
@@ -69,6 +75,7 @@ You are able to generate mesh in javascript and pass to shader mesh input. Here 
 | indices  | Uint8Array<br>Uint16Array<br>Uint32Array<br>Array |  | true |
 | indexBitDepth | Integer | 8\|16\|32 | true | 32
 | attributes | Array of Object |  | false |
+| boundingBox | Object | | true | automatically calculated from vertices
 
 
 ## Mesh Attribute

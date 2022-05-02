@@ -1,7 +1,7 @@
 # Non-Scriptable Nodes
 
 ## SamplerState
-Since immediate sampler state is not support in glsl, you need to define a sampler state node and pass it to the automatically generated sampler input of glsl node. When the sampler input is left empty, CGProto automatically create a default sampler state with linear filter mode and repeat address mode.
+Since immediate sampler state is not support in glsl, you need to define a sampler state node and pass it to the automatically generated sampler input of glsl node. When the sampler input is left empty, CGProto automatically create a default sampler state with linear filter mode and clamp to edge address mode.
 ![](_assets/2.png)
 
 ## RenderState

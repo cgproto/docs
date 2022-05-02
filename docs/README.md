@@ -24,7 +24,7 @@ Sometimes it's annoying to see the dizzy lines when you project get complicated.
 ![](_assets/1.png ':align=center')
 
 ## Exporting and Importing Projects
-Project files are organized as zip package when importing and exporting. Long press the project cover and tap the Share button to export the project. You are able to view all source files and assets after unzipping the package. To re-import the project you should zip the root project folder, send it to your device via airdrop or email or any other tools that can transfer files to mobile device, then select open with CGProto. After that the project should be in your workspace.
+Project files are organized as zip package when importing and exporting. Long press the project cover and tap the Share button to export the project. You are able to view all source files and assets after unzipping the package. To re-import the project you should zip the root project folder, send it to your device via airdrop or email or any other tools that can transfer files to mobile device, then select open with CGProto. After that the project should be in your workspace. From version over 2.0, projects could be imported from document browser via the import button in the right top bar of the root view.
 
 ## About the Examples
 Several sample projects is provided in example tab to help you get involved to CGProto more quickly. We plan to supply more instructive examples in the future released of CGProto. Some of the sources are modified from open source projects and are under licensed. You should subject to the corresponding licenses when using those sources.
