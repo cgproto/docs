@@ -7,4 +7,5 @@
 * [JS Data Conversions](data-conversions.md)
 * [Built-in Shader Variables](built-in-shader-variables.md)
 * [Unity ShaderLab Support](unity-support.md)
+* [Touch API](touch-api.md)
 * [ChangeLogs](changelogs.md)
