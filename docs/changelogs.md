@@ -1,5 +1,10 @@
 # ChangeLogs
 
+## 2.2
+
+* add [touch node](touch-api)
+* add painting example
+
 ## 2.1
 
 * support import audio from document browser
