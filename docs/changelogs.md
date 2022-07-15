@@ -1,5 +1,9 @@
 # ChangeLogs
 
+## 2.3
+
+* add [arkit face tracking node](non-scriptable-nodes?id=FaceTrackingAR)
+
 ## 2.2
 
 * add [touch node](touch-api)

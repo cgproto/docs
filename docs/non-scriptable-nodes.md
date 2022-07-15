@@ -20,6 +20,18 @@ Shader node accept a optional render state input. When the input is leave empty,
 | enable depth write | false
 | depth compare function | always
 
+## FaceTrackingAR
+You are able to use the TrueDepth API by using the FaceTrackingAR node. It contains several outputs exposing the data of [ARFaceAnchor](https://developer.apple.com/documentation/arkit/arfaceanchor/), [ARFaceGeometry](https://developer.apple.com/documentation/arkit/arfacegeometry) and [ARCamera](https://developer.apple.com/documentation/arkit/arcamera/). 
+
+- The most recent still frame captured by the active camera feed, with additional size info.
+- [faceGeometry](https://developer.apple.com/documentation/arkit/arfacegeometry): A coarse triangle mesh representing the topology of the detected face.
+- [blendShapes](https://developer.apple.com/documentation/arkit/arfaceanchor/2928251-blendshapes): A dictionary of named coefficients representing the detected facial expression in terms of the movement of specific facial features.
+- [faceTransform](https://developer.apple.com/documentation/arkit/aranchor/2867981-transform): The face’s current position and orientation in world coordinates.
+- [viewMatrix](https://developer.apple.com/documentation/arkit/arcamera/2921672-viewmatrix): A transform matrix for converting from world space to camera space.
+- [projectionMatrix](https://developer.apple.com/documentation/arkit/arcamera/2887458-projectionmatrix): A transform matrix appropriate for rendering 3D content to match the image captured by the camera.
+
+Since using ARKit may drain the battery of your device very fast. CGProto also provide a switch button for you to pause the camera. 
+
 ## Scalar and Vector
 
 ## Timer
