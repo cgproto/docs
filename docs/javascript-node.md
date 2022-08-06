@@ -1,7 +1,7 @@
 # Javascript
 
 ## Declaring Inputs and Outputs
-Usually a javascript node expect a function type variable return from your scriot source. CGProto reflects the parameter of the function to generate the node input. And The value of node output is the return value of your function. Whenever the input of the node have been changed, the node is marked as dirty and the function is re-invoked to produce the new output.
+Usually a javascript node expect a function type variable return from your script source. CGProto reflects the parameter of the function to generate the node input. And The value of node output is the return value of your function. Whenever the input of the node have been changed, the node is marked as dirty and the function is re-invoked to produce the new output.
 ![](_assets/5.png)
 
 If you just want to generate some constant data. You could simply return the data in you script. When CGProto detect that the type of your returned value is not Function, it simply bypass the value to the node output. 
