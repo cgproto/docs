@@ -76,6 +76,7 @@ The boundingBox is used for generating world matrix when you are using [built-in
 | indexBitDepth | Integer | 8\|16\|32 | true | 32
 | attributes | Array of Object |  | false |
 | boundingBox | Object | | true | automatically calculated from vertices
+| submeshes | Array of Object | | true |
 
 
 ## Mesh Attribute
@@ -86,3 +87,43 @@ The attribute name should match the name defined in the corresponed shader.
 | name | String |
 | format | String | uchar\|uchar2\|uchar3\|uchar4<br><br>ucharNorm\|ucharNorm2\|ucharNorm3\|ucharNorm4<br><br>char\|char2\|char3\|char4<br><br>charNorm\|charNorm2\|charNorm3\|charNorm4<br><br>ushort\|ushort2\|ushort3\|ushort4<br><br>ushortNorm\|ushortNorm2\|ushortNorm3\|ushortNorm4<br><br>short\|short2\|short3\|short4<br><br>shortNorm\|shortNorm2\|shortNorm3\|shortNorm4<br><br>uint\|uint2\|uint3\|uint4<br><br>int\|int2\|int3\|int4<br><br>half\|half2\|half3\|half4<br><br>float\|float2\|float3\|float4
 | data | Array of Number\|TypedArray | 
+
+## SubMesh
+submeshes property was introduced from version 2.4. The properties below are move to submesh. While you are still able to keep the old method to define the mesh structure if there is only one submesh.
+
+- geometryType
+- indices
+- indexBitDepth
+
+```javascript
+{
+  submeshes: [
+    {
+      geometryType: 'triangles',
+      indices: [0, 1, 2],
+      indexBitDepth: 8,
+    },
+    {
+      geometryType: 'triangles',
+      indices: [1, 3, 2],
+      indexBitDepth: 8,
+    }
+  ]
+  attributes: [
+    {
+      name: 'position',
+      format: 'float2',
+      data: [-1, 1, -1, -1, 1, 1, 1, -1],
+    },
+    {
+      name: 'textureCoordinate',
+      format: 'float2',
+      data: [0, 0, 0, 1, 1, 0, 1, 1],
+    }
+  ],
+  boundingBox: {
+    min: [-1, -1, -1],
+    max: [1, 1, 1]
+  }
+}
+```

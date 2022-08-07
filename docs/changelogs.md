@@ -2,7 +2,9 @@
 
 ## 2.4
 
-* coming soon
+* support remote coding on desktop by using the [CGProto VSCode extension](vscode-extension)
+* Javascript mesh supports defining [submeshes](data-conversions?id=submesh)
+* model assetes imported from document browser could be passed to Javascript node
 
 ## 2.3
 
