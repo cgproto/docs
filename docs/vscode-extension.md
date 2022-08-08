@@ -21,3 +21,6 @@ Here is how you find your mobile device's IP address
 - Click on Wi-Fi
 - Scroll down to the lowercase i, which stands for Information, next to the Wi-Fi network you’re connected to currently.
 - Scroll down to IPv4 Address. The IP address will be there.
+
+We also make a video to demonstrate this new feature. You could watch it on [youtube](https://youtu.be/ol0FXjQ5th8) or 
+[bilibili](https://www.bilibili.com/video/BV14t4y1G7gg/)
