@@ -1,5 +1,17 @@
 # ChangeLogs
 
+## 2.6
+
+* support import coreml model(.mlmodel, .mlpackage)
+* add [numjs](https://github.com/cgproto/numjs/tree/cgproto) built-in javascript library
+* add facial landmarks detection example
+
+## 2.5
+
+* support clone project from git
+* add json node
+* add catmull-clark example
+
 ## 2.4
 
 * support remote coding on desktop by using the [CGProto VSCode extension](vscode-extension)
