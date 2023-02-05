@@ -27,7 +27,23 @@ However, CGProto has not idea how to distinguish whether the returned value shou
 ![](_assets/4.png)
 
 ## Built-in Library
-We try to keep your javascript dependency-free as possiable. However, it's really hard to do calculating without a 3d math library. So we did embed a javascript library named 'math3d' which you could import by calling `const math3d = require('math3d')`. This library is modified from the math module of [three.js](https://github.com/mrdoob/three.js/tree/dev/src/math). See the github repo [here](https://github.com/cgproto/math3d).
+Javascript library is imported by `require` function. For example, `const math3d = require('math3d')`.
+There are two built-in Javascript library in CGProto.
+
+[math3d](https://github.com/cgproto/math3d): this library is modified from the math module of [three.js](https://github.com/mrdoob/three.js/tree/dev/src/math).
+
+[numjs](https://github.com/cgproto/numjs): this library is used for manipulating tensor when using coreml model
+
+You can [import your custom library](README?id=importing-custom-library) but the source should be packed as the form like this
+
+```javascript
+(()=>{
+  function sub(a, b) {
+    return a - b
+  }
+  return sub
+})()
+```
 
 
 ## Utility functions

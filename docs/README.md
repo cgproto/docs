@@ -29,6 +29,15 @@ Project files are organized as zip package when importing and exporting. Long pr
 ## About the Examples
 Several sample projects is provided in example tab to help you get involved to CGProto more quickly. We plan to supply more instructive examples in the future released of CGProto. Some of the sources are modified from open source projects and are under licensed. You should subject to the corresponding licenses when using those sources.
 
+## Importing Custom Library
+From version over 2.9, you are able import custom Javascript, glsl and hlsl library by git. Click the folder button on the editor menu to manage all libraries.
+
+![](_assets/14.png ':align=center')
+
+The Custom folder is the search path for script node. For example, if you want to reference the `easing.glsl` of the imported library [lygia](https://github.com/patriciogonzalezvivo/lygia), you should declare `#include "lygia/easing/easing.glsl` in you glsl node.
+
+![](_assets/15.png ':align=center')
+
 ## Contact
 If you hava any questions or suggestions about CGProto, feel free to contact us at
 - Email: [lorentz.0718@gmail.com](mailto:lorentz.0718@gmail.com).

@@ -1,5 +1,18 @@
 # ChangeLogs
 
+## 2.9
+
+* support [adding third-party library](README?id=importing-custom-library) by git
+* support referencing custom shader header in glsl and hlsl with #include syntax
+
+## 2.8
+
+* fix crash when logging with the logger view hidden on iOS16
+
+## 2.7
+
+* add DeepLabV3 example
+
 ## 2.6
 
 * support import coreml model(.mlmodel, .mlpackage)
